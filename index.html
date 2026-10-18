@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYCORE | Moda Fitness</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="marca">
+            <div class="logo">BYCORE</div>
+            <p class="slogan">Feito para o seu ritmo</p>
+        </div>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="carrinho-topo" onclick="verCarrinho()">
+            🛍 Carrinho (<span id="quantidade">0</span>)
+        </button>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="banner-texto">
+                <h1>Seu movimento.<br>Seu estilo.</h1>
+                <p>Descubra peças que acompanham você em cada treino e em cada conquista.</p>
+                <a href="#produtos" class="botao">Conheça a coleção</a>
+            </div>
+        </section>
+
+        <section class="categorias secao" id="categorias">
+            <h2 class="titulo-secao">Explore nossas categorias</h2>
+            <div class="lista-categorias">
+                <a href="#produtos" class="categoria">
+                    <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?auto=format&fit=crop&w=300&q=80" alt="Roupas fitness">
+                    <p>Body</p>
+                </a>
+                <a href="#produtos" class="categoria">
+                    <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=300&q=80" alt="Shorts fitness">
+                    <p>Shorts</p>
+                </a>
+                <a href="#produtos" class="categoria">
+                    <img src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=300&q=80" alt="Calças esportivas">
+                    <p>Calças</p>
+                </a>
+                <a href="#produtos" class="categoria">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=300&q=80" alt="Acessórios fitness">
+                    <p>Acessórios</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="produtos secao" id="produtos">
+            <h2 class="titulo-secao">Destaques da coleção</h2>
+            <div class="grade-produtos">
+                <article class="produto" data-nome="BODY SURF" data-preco="150" data-descricao="Conforto e estilo para acompanhar seus movimentos.">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=85" alt="Body Surf">
+                    <div class="informacoes">
+                        <h3>BODY SURF</h3>
+                        <p class="descricao">Conforto para todos os movimentos</p>
+                        <p class="preco">R$ 150,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-nome="CONJUNTO IT GIRL" data-preco="130" data-descricao="Estilo e liberdade para acompanhar sua rotina de treino.">
+                    <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=700&q=85" alt="Conjunto It Girl">
+                    <div class="informacoes">
+                        <h3>CONJUNTO IT GIRL</h3>
+                        <p class="descricao">Estilo e liberdade no treino</p>
+                        <p class="preco">R$ 130,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-nome="CONJUNTO SHINE" data-preco="120" data-descricao="Uma combinação de energia, conforto e personalidade.">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=85" alt="Conjunto Shine">
+                    <div class="informacoes">
+                        <h3>CONJUNTO SHINE</h3>
+                        <p class="descricao">Sua energia em cada detalhe</p>
+                        <p class="preco">R$ 120,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-nome="CONJUNTO ESSENTIAL" data-preco="150" data-descricao="Minimalismo e conforto para seus treinos e seu dia a dia.">
+                    <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=700&q=85" alt="Conjunto Essential">
+                    <div class="informacoes">
+                        <h3>CONJUNTO ESSENTIAL</h3>
+                        <p class="descricao">Minimalismo e conforto</p>
+                        <p class="preco">R$ 150,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-nome="BODY MOVE" data-preco="110" data-descricao="Uma peça versátil, pensada para acompanhar seus movimentos.">
+                    <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba?auto=format&fit=crop&w=700&q=85" alt="Body Move">
+                    <div class="informacoes">
+                        <h3>BODY MOVE</h3>
+                        <p class="descricao">Feito para acompanhar você</p>
+                        <p class="preco">R$ 110,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-nome="CONJUNTO ACTIVE" data-preco="140" data-descricao="Praticidade e conforto para deixar sua rotina mais leve.">
+                    <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=700&q=85" alt="Conjunto Active">
+                    <div class="informacoes">
+                        <h3>CONJUNTO ACTIVE</h3>
+                        <p class="descricao">Praticidade para sua rotina</p>
+                        <p class="preco">R$ 140,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-nome="CONJUNTO FLOW" data-preco="135" data-descricao="Leveza e liberdade para acompanhar cada movimento.">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f7e1a3b7c6a0?auto=format&fit=crop&w=700&q=85" alt="Conjunto Flow">
+                    <div class="informacoes">
+                        <h3>CONJUNTO FLOW</h3>
+                        <p class="descricao">Leveza em todos os momentos</p>
+                        <p class="preco">R$ 135,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+
+                <article class="produto" data-nome="CONJUNTO POWER" data-preco="160" data-descricao="Um look cheio de personalidade para você treinar com confiança.">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=85" alt="Conjunto Power">
+                    <div class="informacoes">
+                        <h3>CONJUNTO POWER</h3>
+                        <p class="descricao">Potência e personalidade</p>
+                        <p class="preco">R$ 160,00</p>
+                        <button class="comprar">Adicionar ao carrinho</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato">
+        <h2>BYCORE</h2>
+        <p>Feito para o seu ritmo.</p>
+        <p>Moda fitness para acompanhar você em cada conquista.</p>
+        <p class="copyright">© 2026 BYCORE — Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Pop-up de detalhes do produto -->
+    <div class="modal" id="modalProduto" aria-hidden="true">
+        <div class="modal-conteudo modal-produto">
+            <button class="fechar" data-fechar="modalProduto" aria-label="Fechar">&times;</button>
+            <div class="produto-detalhe">
+                <img id="detalheImagem" src="" alt="">
+                <div class="detalhe-info">
+                    <p class="etiqueta">BYCORE COLLECTION</p>
+                    <h2 id="detalheNome"></h2>
+                    <p id="detalheDescricao"></p>
+                    <p class="detalhe-preco" id="detalhePreco"></p>
+                    <button class="botao-modal" id="botaoAdicionarDetalhe">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up do carrinho -->
+    <div class="modal" id="modalCarrinho" aria-hidden="true">
+        <div class="modal-conteudo modal-carrinho">
+            <button class="fechar" data-fechar="modalCarrinho" aria-label="Fechar">&times;</button>
+            <h2>Meu carrinho</h2>
+            <p class="subtitulo-carrinho">Confira seus produtos antes de continuar.</p>
+            <div id="listaCarrinho"></div>
+            <div class="total-carrinho">
+                <span>Total</span>
+                <span id="totalCarrinho">R$ 0,00</span>
+            </div>
+            <button class="botao-modal" id="botaoFinalizar">Finalizar compra</button>
+            <p class="aviso-checkout">Demonstração de loja: o pagamento ainda não está integrado.</p>
+        </div>
+    </div>
+</body>
+</html>
